@@ -28,6 +28,7 @@
 #![cfg_attr(feature = "attiny85", doc = "**attiny85**,")]
 #![cfg_attr(feature = "attiny861", doc = "**attiny861**,")]
 #![cfg_attr(feature = "attiny88", doc = "**attiny88**,")]
+#![cfg_attr(feature = "atxmega32a4u", doc = "**atxmega32a4u**,")]
 //! and a few things which apply to AVR microcontrollers generally.
 //!
 #![cfg_attr(
@@ -65,6 +66,7 @@
 //! `attiny85`,
 //! `attiny861`,
 //! `attiny88`,
+//! `atxmega32a4u`,
 //!
 //! # How to use this crate?
 //!
@@ -214,6 +216,7 @@ compile_error!(
     * attiny85
     * attiny861
     * attiny88
+    * atxmega32a4u
     "
 );
 
@@ -278,3 +281,5 @@ pub use crate::devices::attiny85;
 pub use crate::devices::attiny861;
 #[cfg(feature = "attiny88")]
 pub use crate::devices::attiny88;
+#[cfg(feature = "atxmega32a4u")]
+pub use crate::devices::atxmega32a4u;
