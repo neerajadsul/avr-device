@@ -52,6 +52,7 @@ attiny85 = ["device-selected"]
 attiny861 = ["device-selected"]
 attiny88 = ["device-selected"]
 attiny1614 = ["device-selected"]
+atxmega32a4u = ["device-selected"]
 rt = ["avr-device-macros"]
 
 # Unfortunately, we can only build documentation for a subset of the supported
